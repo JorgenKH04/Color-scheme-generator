@@ -1,0 +1,132 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  min-width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  color: #ffffff;
+}
+
+header {
+  padding: 0.5em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+button {
+  font-weight: 400;
+  text-align: left;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #1f2937;
+  font-family: inherit;
+}
+
+input {
+  min-height: 3.5em;
+  min-width: 5em;
+  border-radius: 0;
+}
+
+.container {
+  background-color: #1f2937;
+  margin: 0 auto;
+  min-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  padding: 0.5em 0;
+}
+
+.color-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.color-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 7em;
+}
+
+.colors {
+  min-height: 20em;
+  min-width: 100%;
+}
+
+#dropdownbutton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #d5d4d8;
+  min-height: 2.5em;
+  padding: 0 0.5em;
+  min-width: 17em;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  min-width: 17em;
+  display: none;
+  flex-direction: column;
+  background-color: #1f2937;
+  position: absolute;
+  background-color: none;
+}
+
+.dropdown-item {
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  min-width: 100%;
+  min-height: 100%;
+  padding: 0.5em 0.5em;
+}
+
+#chevron-icon {
+  vertical-align: middle;
+  width: 2em;
+  height: 2em;
+}
+
+#unusedbtn {
+  font-weight: 500;
+  font-size: 0.75rem;
+  background-color: #3d4b60;
+  border: none;
+  border-radius: 4px;
+  padding: 1em 2em;
+}
+
+.checkmark {
+  display: none;
+  vertical-align: middle;
+  min-width: 1em;
+  min-height: 1em;
+}
+
+.fw600 {
+  font-weight: 600;
+}
+
+.show {
+  display: flex;
+}

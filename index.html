@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>ColorGen</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <input id="colorPicker" type="color" value="#F55A5A" />
+        <div class="dropdown">
+          <button id="dropdownbutton">
+            Monochrome
+            <span
+              ><img
+                id="chevron-icon"
+                src="./assets/icons/chevron-down.svg"
+                alt="chevron-down"
+            /></span>
+          </button>
+          <div id="dropdown-menu" class="dropdown-menu">
+            <button id="monochrome" class="dropdown-item">
+              Monochrome
+              <span
+                ><img
+                  class="checkmark"
+                  src="./assets/icons/check.svg"
+                  alt=" checkmark"
+              /></span>
+            </button>
+            <button id="monochrome-dark" class="dropdown-item">
+              Monochrome-dark
+              <span
+                ><img
+                  class="checkmark"
+                  src="./assets/icons/check.svg"
+                  alt=" checkmark"
+              /></span>
+            </button>
+            <button id="monochrome-light" class="dropdown-item">
+              Monochrome-light
+              <span
+                ><img
+                  class="checkmark"
+                  src="./assets/icons/check.svg"
+                  alt=" checkmark"
+              /></span>
+            </button>
+            <button id="analogic" class="dropdown-item">
+              Analogic
+              <span
+                ><img
+                  class="checkmark"
+                  src="./assets/icons/check.svg"
+                  alt=" checkmark"
+              /></span>
+            </button>
+
+            <button id="complement" class="dropdown-item">
+              Complement
+              <span
+                ><img
+                  class="checkmark"
+                  src="./assets/icons/check.svg"
+                  alt=" checkmark"
+              /></span>
+            </button>
+            <button id="analogic-complement" class="dropdown-item">
+              Analogic-complement
+              <span
+                ><img
+                  class="checkmark"
+                  src="./assets/icons/check.svg"
+                  alt=" checkmark"
+              /></span>
+            </button>
+            <button id="triad" class="dropdown-item">
+              Triad
+              <span
+                ><img
+                  class="checkmark"
+                  src="./assets/icons/check.svg"
+                  alt=" checkmark"
+              /></span>
+            </button>
+          </div>
+        </div>
+        <button id="unusedbtn">Useless atm</button>
+      </header>
+      <section class="color-section">
+        <div class="color-container">
+          <div id="main-color" class="colors"></div>
+          <p id="main-color-text">#FFFFFF</p>
+        </div>
+        <div class="color-container">
+          <div id="color0" class="colors"></div>
+          <p id="color0-text">#FFFFFF</p>
+        </div>
+        <div class="color-container">
+          <div id="color1" class="colors"></div>
+          <p id="color1-text">#FFFFFF</p>
+        </div>
+        <div class="color-container">
+          <div id="color2" class="colors"></div>
+          <p id="color2-text">#FFFFFF</p>
+        </div>
+        <div class="color-container">
+          <div id="color3" class="colors"></div>
+          <p id="color3-text">#FFFFFF</p>
+        </div>
+      </section>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
