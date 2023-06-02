@@ -50,31 +50,27 @@ const colorChange = (hex, mode) => {
     }
   )
     .then((res) => res.json())
-    //returns colorvalue of first color in array
-    /*.then((data) => console.log(data.colors[0].hex.value));*/
     .then((data) => {
       setColor(data);
     });
 };
 
-const setColor = (data) => {
+const setColor = ({ colors }) => {
   document.querySelector("#main-color").style.backgroundColor =
     colorPicker.value;
   document.querySelector("#main-color-text").textContent =
     colorPicker.value.toUpperCase();
-  console.log(data.colors);
-  for (i = 0; i < data.colors.length; i++) {
+  for (i = 0; i < colors.length; i++) {
     document.querySelector(`#color${i}`).style.backgroundColor =
-      data.colors[i].hex.value;
+      colors[i].hex.value;
     document.querySelector(`#color${i}-text`).textContent =
-      data.colors[i].hex.value.toUpperCase();
+      colors[i].hex.value.toUpperCase();
   }
 };
 
 const selectDropdown = (id) => {
   document.querySelector(`#${id} span img`).classList.add("show");
   document.querySelector(`#${id}`).classList.add("fw600");
-  console.log(document.querySelector(`#${id} span img`));
 };
 
 const removeSelection = () => {
